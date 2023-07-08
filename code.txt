@@ -1,0 +1,94 @@
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   coba.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git add .
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git commit -m "ini ngetes aja"
+[master 34e64df] ini ngetes aja
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 253 bytes | 50.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rizalauliarahmans/cobaaja.git
+   ab2856b..34e64df  master -> master
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git log -- cobaaja.txt
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git log
+commit 34e64dfa7887a18359ca6a10ccb72850ae03e260 (HEAD -> master, origin/master)
+Author: rizalauliarahmans <rrizalaulia2@gmail.com>
+Date:   Sat Jul 8 11:49:30 2023 +0700
+
+    ini ngetes aja
+
+commit ab2856bb3f8a5ed4742b595625a0b2dc8a8d5777
+Author: rizalauliarahmans <rrizalaulia2@gmail.com>
+Date:   Sat Jul 8 11:21:46 2023 +0700
+
+    ini ngetes
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git checkout ^C
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ ^C
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git checkout ab2856bb3f8a5ed4742b595625a0b2dc8a8d5777 -- cobaaja.txt
+error: pathspec 'cobaaja.txt' did not match any file(s) known to git
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git checkout ab2856bb3f8a5ed4742b595625a0b2dc8a8d5777  -- cobaaja.txt
+error: pathspec 'cobaaja.txt' did not match any file(s) known to git
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git checkout ab2856bb3f8a5ed4742b595625a0b2dc8a8d5777  -- coba.txt
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git commit -m "ini ngetes aja lagi"
+[master 3a7a88d] ini ngetes aja lagi
+ 1 file changed, 1 deletion(-)
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git push\
+> ^C
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 252 bytes | 126.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rizalauliarahmans/cobaaja.git
+   34e64df..3a7a88d  master -> master
+
+User@DESKTOP-P6SVG5U MINGW64 ~/Documents/cobaaja (master)
+$
